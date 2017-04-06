@@ -1,0 +1,60 @@
+.pretplata-cta-section
+	text-align: center
+	padding-top: 40px
+	margin: auto 100px 80px
+	.subheading
+		color: $nice-red
+.pretplata-send-info-wrap
+	margin-top: 40px
+	display: flex
+.send-info-text, .send-info-form
+	width: 50%
+	text-align: left
+	p 
+		font-size: 18px
+		font-weight: 400
+		color: $text-black
+		margin-top: 10px		
+.input-style
+	width: 100%
+	height: 30px
+	margin: 10px auto
+	border: none
+	border-bottom: 1px solid rgba(0,0,0, 0.2)
+	color: $text-black
+	outline: none
+	&::placeholder 
+		//padding-left: 10px
+		color: rgba(0,0,0, 0.4)
+	&:focus
+		border-bottom: 1px solid $l-green
+.textarea-style
+	width: 100%
+	height: 30px
+	margin: 10px auto
+	border: none
+	border-bottom: 1px solid rgba(0,0,0, 0.2)
+	color: $text-black
+	outline: none
+	&::placeholder 
+		//padding-left: 10px
+		color: rgba(0,0,0, 0.4)
+	&:focus
+		border-bottom: 1px solid $l-green
+.button-send
+	background: $l-green
+	border: none
+	color: $text-white
+	padding: 5px 15px
+	border-radius: 2%
+	font-size: 18px
+	font-weight: 300
+	cursor: pointer
+
+@media (max-width: 775px)
+	.pretplata-cta-section
+		margin: auto 20px 80px
+	.pretplata-send-info-wrap
+		flex-direction: column
+	.send-info-text, .send-info-form
+		width: 100%

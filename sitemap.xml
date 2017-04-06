@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+
+	<url>
+		<loc>http://novis.rs/</loc>
+		<priority>1.0</priority>
+		<changefreq>weekly</changefreq>
+		<lastmod>2017-4-2</lastmod>
+	</url>
+
+	<url>
+		<loc>http://novis.rs/informacije</loc>
+	</url>
+
+	<url>
+		<loc>http://novis.rs/paketi</loc>
+	</url>
+
+	<url>
+		<loc>http://novis.rs/saradnja</loc>
+	</url>
+
+	<url>
+		<loc>http://novis.rs/kontakt</loc>
+	</url>
+
+</urlset>

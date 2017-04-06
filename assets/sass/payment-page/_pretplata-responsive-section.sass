@@ -1,0 +1,23 @@
+.pretplata-responsive-section
+	display: flex
+	margin: 40px 100px
+.responsive-section-text, .responsive-section-img
+	width: 50%
+	overflow: hidden
+.responsive-section-img
+	background-color: white
+	img
+		opacity: 0.5
+.responsive-section-text
+	p 
+		font-size: 18px
+		font-weight: 400
+		color: $text-black
+		margin-top: 10px
+@media( max-width: 775px)
+	.pretplata-responsive-section
+		margin: 40px 20px
+	.responsive-section-text
+		width: 100%
+	.responsive-section-img
+		display: none

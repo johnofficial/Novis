@@ -1,0 +1,3 @@
+Sitemap: http://novis.rs/sitemap.xml
+
+User-agent: *

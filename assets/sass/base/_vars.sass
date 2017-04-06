@@ -1,0 +1,83 @@
+//Colours
+
+$l-green: #2ecc71
+$d-green: #27ae60
+$l-red: #e74c3c
+$d-red: #c0392b
+$nice-red: #f44336
+$clouds: #ecf0f1
+$text-black: rgba(0, 0, 0, 0.87)
+$text-white: rgba(255,255,255, 0.87)
+
+//Fonts
+
+$roboto-slab: 'Roboto Slab', serif
+
+//Animations
+
+@keyframes bounceIn 
+	from, 20%, 40%, 60%, 80%, to 
+		animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+
+	0% 
+		opacity: 0
+		transform: scale3d(.3, .3, .3)
+  
+
+	20% 
+		transform: scale3d(1.1, 1.1, 1.1)
+  
+
+	40% 
+		transform: scale3d(.9, .9, .9)
+  
+
+	60% 
+		opacity: 1
+		transform: scale3d(1.03, 1.03, 1.03)
+  
+
+	80% 
+		transform: scale3d(.97, .97, .97)
+  
+	to 
+		opacity: 1
+		transform: scale3d(1, 1, 1)
+  
+
+
+.bounceIn 
+	animation-name: bounceIn
+
+
+
+
+//Elements
+
+
+// Buttons
+a.button
+	padding: 7px
+
+a.flat-button
+	&:hover
+		text-decoration: underline
+	&.green
+		color: $l-green
+
+
+// Background Colors
+
+.bg-green
+	background-color: $l-green
+	color: white
+.bg-red
+	background-color: $nice-red
+	color: white
+
+// Text or Icon Colors
+
+.green
+	color: $l-green
+.red 
+	color: $nice-red

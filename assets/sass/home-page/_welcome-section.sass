@@ -1,0 +1,27 @@
+.welcome-section
+	height: 500px
+	background-color: $l-green
+	width: 100%
+	display: flex
+	justify-content: center
+	flex-direction: column
+	border-bottom: 1px solid $l-green
+	border-top: 1px solid $l-green
+	
+	h1
+		margin-left: 100px
+		font-family: $roboto-slab
+		font-size: 72px
+		font-weight: 100
+		color: white
+
+@media (max-width: 775px)
+	.welcome-section
+		h1
+			font-size: 48px
+@media (max-width: 420px)
+	.welcome-section
+		height: 180px
+		h1
+			font-size: 24px
+			margin-left: 60px

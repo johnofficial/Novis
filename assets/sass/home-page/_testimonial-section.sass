@@ -1,0 +1,95 @@
+.testimonial-section
+	text-align: center
+	position: relative
+	min-height: 330px
+	h1
+		font-size: 36px
+		font-weight: 100
+		color: $text-black
+		padding-top: 40px
+		padding-bottom: 40px
+.testimonial-controls
+	position: absolute
+	top: 0px
+	bottom: 0px
+	left: 0px
+	right: 0px
+	.next
+		position: absolute
+		top: 50%
+		right: 10px
+		margin-top: -20px
+	.prev
+		position: absolute
+		top: 50%
+		left: 10px
+		margin-top: -20px
+
+.testimonial-unit
+	width: 500px
+	text-align: left
+	margin: 130px 0 50px -250px
+	position: absolute
+	top: 0px
+	left: 50%
+	display: none
+	animation: bounceIn 2s ease-in-out 0s 1
+
+	&.active-unit
+		display: flex
+
+.profile-img
+	height: 100px
+	width: 100px
+	border-radius: 50%
+	overflow: hidden
+	img
+		width: 110px
+		height: auto
+		transform: scale(1.2)
+
+.testimonial-content
+	width: 400px
+	margin-left: 20px
+	font-size: 18px
+	color: $text-black
+	p 
+		margin-bottom: 10px
+.signature
+	opacity: 0.5
+	font-family: $roboto-slab
+	i
+		font-size: 80%
+
+
+@media (max-width: 775px)
+	.testimonial-unit.active-unit
+		display: block
+	.testimonial-unit
+		position: relative
+		margin: 30px 0 50px -250px
+	.testimonial-content
+		width: 300px
+		margin: auto
+		text-align: center
+	.profile-img
+		margin: auto
+		margin-bottom: 20px	
+	
+	.testimonial-controls
+		display: none
+	.mobile-controls
+		cursor: pointer
+		display: inline-block
+		height: 16px
+		width: 16px
+		border-radius: 50%
+		border: solid 2px $l-green
+		opacity: 0.6
+		margin: 5px
+		&.active-unit
+			opacity: 1
+@media (max-width: 420px)
+	.testimonial-unit
+		width: 300px
+		margin: 50px 0 50px -150px

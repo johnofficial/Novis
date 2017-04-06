@@ -1,0 +1,110 @@
+.header-navigation
+	height: 80px
+
+//Logo Style
+.logo 
+	margin-left: 100px
+	position: relative
+
+.image-logo
+	height: 40px
+	width: 40px
+	position: absolute
+	margin-top: 20px
+
+.text-logo 
+	position: absolute
+	color: $d-green
+	font-weight: 100
+	font-size: 36px
+	margin: 0
+	margin-left: 50px
+	line-height: 80px
+
+//End Logo Style
+//-----------------------------------------------------------------------
+//Menu Items
+.mobile-header
+	display: none
+.menu-items
+	float: right
+.menu-items a 
+	font-size: 20px
+	font-weight: 700
+	color: rgba(0, 0, 0, 0.5)
+	text-decoration: none
+	margin-left: 30px
+	line-height: 80px
+
+	&:last-child
+		margin-right: 100px
+
+	&.active
+		color: rgba(0, 0, 0, 0.7)
+
+//End Menu Items
+//-----------------------------------------------------------------------
+
+
+@media(max-width: 775px)
+	.logo
+		margin-left: 20px
+	.menu-items
+		display: none
+		a:last-child
+			margin-right: 20px
+
+	.mobile-nav-toggle
+		display: flex
+		position: relative
+		float: right
+		margin-right: 20px
+		margin-top: 10px
+		height: 60px
+		width: 60px
+		align-items: center
+		span,
+		span::before,
+		span::after
+			transition: 0.1s
+			display: block
+			position: absolute
+			content: ""
+			background-color: $text-black
+			height: 2px
+			width: 100%
+		span::before
+			top: -17px
+		span::after
+			top: 17px
+		&.is-open span
+			background-color: transparent
+		&.is-open span::before
+			top: 0px
+			transform: rotate(45deg)
+			transition: 0.5s
+		&.is-open span::after
+			transform-origin: center
+			top: 0px
+			transform: rotate(-45deg)
+			transition: 0.5s
+	.mobile-header
+		display: hidden
+		position: absolute
+		z-index: 2
+		background-color: white
+		width: 200px
+		right: -200px
+		transition: 0.5s
+		&.is-open
+			display: block
+			right: 0px
+		a
+			display: block
+			text-align: center
+			margin: 20px auto
+			font-size: 20px
+			font-weight: 700
+			color: rgba(0, 0, 0, 0.7)
+			text-decoration: none
+	

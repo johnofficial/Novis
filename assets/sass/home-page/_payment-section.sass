@@ -1,0 +1,68 @@
+.payment-section
+	text-align: center
+	h1
+		font-size: 36px
+		font-weight: 100
+		color: $text-black
+		padding-top: 40px
+		padding-bottom: 40px
+
+.square
+	height: 300px
+	width: 300px
+	display: inline-block
+	background: $l-green
+	margin: auto 25px 50px
+	h2
+		margin-top: 80px
+		font-size: 48px
+		font-family: $roboto-slab
+		color: $text-white
+		font-weight: 300
+.payment-description
+	width: 50%
+	margin: 30px auto
+	p 
+		font-size: 24px
+		font-weight: 300
+		color: $text-black
+
+
+@media (max-width: 1060px)
+	.square
+		height: 250px
+		width: 250px
+		margin: auto 10px 30px
+		h2
+			margin-top: 60px
+			font-size: 38px
+
+@media (max-width: 775px)
+	.square
+		height: 200px
+		width: 200px
+		margin: auto 5px 30px
+		h2
+			margin-top: 40px
+			font-size: 34px
+	.payment-description
+		width: 80%
+@media (max-width: 420px)
+	.payment-section h1
+		font-size: 26px
+	.square
+		text-align: center
+		height: 80px
+		width: 100%
+		margin: 5px 0px
+		h2
+			font-size: 42px
+			line-height: 80px
+			margin-top: 0
+			padding-left: 10px
+		br 
+			display: none
+	.payment-description p 
+		font-size: 24px
+	.payment-section .button
+		margin-top: 40px
