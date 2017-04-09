@@ -17,6 +17,8 @@ function clientStuff(){
 				$siblings	= $this.parent().children(),
 				position 	= $siblings.index($this);
 
+			clearInterval(nextInterval);
+
 			$('.testimonial-unit').removeClass('active-unit').eq(position-1).addClass('active-unit');
 			$siblings.removeClass('active-unit');
 			$this.addClass('active-unit');

@@ -1,19 +1,28 @@
 .welcome-section
 	height: 500px
-	background-color: $l-green
+	background-color: black
 	width: 100%
 	display: flex
 	justify-content: center
 	flex-direction: column
 	border-bottom: 1px solid $l-green
 	border-top: 1px solid $l-green
+	position: relative
+	overflow: hidden
+	img
+		position: absolute
+		z-index: 1
+		width: 100%
+		height: auto
+		opacity: 0.4
 	
 	h1
 		margin-left: 100px
-		font-family: $roboto-slab
+		font-family: 'Roboto', sans-serif
 		font-size: 72px
-		font-weight: 100
+		font-weight: 300
 		color: white
+
 
 @media (max-width: 775px)
 	.welcome-section
