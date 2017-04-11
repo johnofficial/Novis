@@ -30,20 +30,25 @@
 	float: right
 .menu-items a 
 	font-size: 20px
-	font-weight: 700
+	font-weight: 300
 	color: rgba(0, 0, 0, 0.5)
 	text-decoration: none
-	margin-left: 30px
+	padding: 5px 
 	line-height: 80px
-	transition: 0.5s
+	text-transform: uppercase
 
 	&:last-child
 		margin-right: 100px
 
 	&.active
-		color: rgba(0, 0, 0, 0.7)
+		color: $d-green
+		border-top: 1px solid $d-green
+		border-bottom: 1px solid $d-green
 	&:hover
-		color: rgba(0, 0, 0, 0.7)
+		color: $d-green
+		border-top: 1px solid $d-green
+		border-bottom: 1px solid $d-green
+
 
 //End Menu Items
 //-----------------------------------------------------------------------
