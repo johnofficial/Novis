@@ -9,24 +9,23 @@
 	border-top: 1px solid $l-green
 	position: relative
 	overflow: hidden
-	img
-		position: absolute
-		z-index: 1
-		width: 100%
-		height: auto
-		opacity: 0.4
-	
+	background: 
+		image: url(../img/welcome.jpg)
+		size: cover
+		attachment: fixed
+
 	h1
 		margin-left: 100px
 		font-family: 'Roboto', sans-serif
 		font-size: 72px
 		font-weight: 300
 		color: white
-		z-index: 2
+		background-attachment: fixed
 
 
 @media (max-width: 775px)
 	.welcome-section
+		background-attachment: scroll
 		h1
 			font-size: 48px
 @media (max-width: 420px)
