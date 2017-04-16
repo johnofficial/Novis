@@ -16,7 +16,7 @@ function clientStuff(){
 			var $this 		= $(this),
 				$siblings	= $this.parent().children(),
 				position 	= $siblings.index($this);
-
+				spanNum 		= $('.testimonial-section span').length;
 			clearInterval(nextInterval);
 
 			$('.testimonial-unit').removeClass('active-unit').eq(position-1).addClass('active-unit');
@@ -59,6 +59,7 @@ var nextInterval = setInterval( function(){
 						$('.active-unit').removeClass('active-unit').next().addClass('active-unit');
 					}else{
 						$('.testimonial-unit').removeClass('active-unit').first().addClass('active-unit');
+						$('.mobile-controls').removeClass('active-unit').first().addClass('active-unit');
 					}
 		}, 7000);
 
